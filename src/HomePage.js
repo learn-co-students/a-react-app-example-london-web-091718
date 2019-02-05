@@ -63,9 +63,27 @@ const HomepageHeading = ({ mobile }) => (
       }}
     />
     
+    
     <Button primary size='huge'>
       Order Now
-      <Icon name='right arrow' />
+      <Icon name='right arrow'/>
+    </Button>
+   
+    <Header
+      as='h6'
+      content='or'
+      inverted
+      
+      
+      style={{
+        fontSize: mobile ? '1.5em' : '1.7em',
+        fontWeight: 'normal',
+        marginTop: mobile ? '0.25em' : '0.75em',
+      }}
+    /> 
+
+<Button primary inverted size='huge'>
+      Find Out More
     </Button>
   </Container>
 )
@@ -343,7 +361,7 @@ const HomepageLayout = () => (
         </Button>
       </Container>
     </Segment> */}
-    <Segment inverted vertical style={{ padding: '5em 0em' }}>
+    {/* <Segment inverted vertical style={{ padding: '5em 0em' }}>
       <Container>
         <Grid divided inverted stackable>
           <Grid.Row>
@@ -372,6 +390,19 @@ const HomepageLayout = () => (
               <p>
                 Extra space for a call to action inside the footer that could help re-engage users.
               </p>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </Container>
+    </Segment> */}
+    <Segment inverted vertical style={{ padding: '5em 0em' }}>
+      <Container>
+        <Grid divided inverted stackable>
+          <Grid.Row>
+            <Grid.Column style={{textAlign: 'center'}}>
+              <List link inverted>
+                <List.Item as='a'>Umrahs Ltd, 101 Finsbury Pavement, London, EC2A 1NT.</List.Item>
+              </List>
             </Grid.Column>
           </Grid.Row>
         </Grid>
